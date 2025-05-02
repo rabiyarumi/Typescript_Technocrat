@@ -1,7 +1,7 @@
 // Learning function
 // Normal function
 // Arrow function
-
+{
 function add(num1: number, num2: number = 9): number{
     return num1 + num2;
 }
@@ -20,4 +20,6 @@ const poorUser = {
 
 
 const arr: number[] = [5,7,98];
-const newArray: number[] = arr.map((elem: number):number => elem*elem)
+const newArray: number[] = arr.map((elem: number):number => elem*elem)    
+
+}
