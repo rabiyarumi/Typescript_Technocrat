@@ -22,4 +22,30 @@
   // const isAuthenticated = false; //{ result1: false }
   const result1 = isAuthenticated ?? "Guest"
   console.log({result1})
+
+
+//=============== Optional chaining
+  type User = {
+    name: string;
+    address: {
+      city: string;
+      road: string;
+      presentaddress: string;
+      permanentAddress?: string;
+    };
+  };
+
+  const user: User = {
+    name: "Persian",
+    address: {
+      city: "ctg",
+      road: "Awesome Road",
+      presentaddress: "ctg town",
+    },
+  };
+
+  const permanentAddress =
+    user?.address?.permanentAddress ?? "No Permanent Address";
+  console.log({ permanentAddress });
+  //
 }
