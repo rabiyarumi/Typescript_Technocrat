@@ -22,7 +22,7 @@
 //   };
 
   //================ Intersection type
-  type FrontendDeveloper = {
+  type FrontendDeveloper = { 
     skills: string[];
     designation1: "Frontend Developer";
   };

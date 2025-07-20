@@ -29,6 +29,6 @@
   const throwError =(msg: string): never => {
     throw new Error(msg);
   }
-  throwError("Oops! again heres an error")
+  throwError("Oops! again here's an error")
 
 }

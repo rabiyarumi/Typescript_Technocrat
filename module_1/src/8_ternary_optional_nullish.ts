@@ -16,12 +16,14 @@
   //========== nullish coalescing operator ----> Decision making based on null or undefined ---> it will only work if the value is null or undefined
 
   const isAuthenticated = null; //{ result1: Guest  }
+  const result1 = isAuthenticated ?? "Guest"
+  console.log({result1}) //{ result1: Guest  }
   // const isAuthenticated = undefined; //{ result1: Guest  }
+
   // const isAuthenticated = ""; //{ result1: '' }
   // const isAuthenticated = true; //{ result1: true }
   // const isAuthenticated = false; //{ result1: false }
-  const result1 = isAuthenticated ?? "Guest"
-  console.log({result1})
+  
 
 
 //=============== Optional chaining
@@ -30,7 +32,7 @@
     address: {
       city: string;
       road: string;
-      presentaddress: string;
+      presentAddress: string;
       permanentAddress?: string;
     };
   };
@@ -40,7 +42,7 @@
     address: {
       city: "ctg",
       road: "Awesome Road",
-      presentaddress: "ctg town",
+      presentAddress: "ctg town",
     },
   };
 
