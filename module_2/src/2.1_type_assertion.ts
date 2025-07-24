@@ -25,6 +25,7 @@ const result2 = kgToGm(300) as string;
 type CustomError ={
     message: string
 }
+
 try{
 
 }catch(error){

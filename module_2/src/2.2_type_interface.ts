@@ -29,7 +29,7 @@ type RollNumber = number;
 //
 
 
-//------ if we want to add a new property we can use "intersection " for "type alias" and we can use "extend" keyword for " type intersection" 
+//------ if we want to add a new property we can use "intersection-(&) " for "type alias" and we can use "extend" keyword for " type intersection" 
 
 //----- type alias
 type UserWithRole1 = User1 & {role: string}
@@ -51,15 +51,32 @@ const userWithRole2: UserWithRole2={
 }
 
 
-//=============== type interface for array
-type Roll1 = number[];
+//=============== type alias & interface for array
 
+//---- with type alias
+type Roll1 = number[];
+const rollNumber1: Roll1 = [ 4, 6, 8,7];
+
+
+//--- with interface
 interface Roll2 {
     [index: number]: number;
 }
-
-const rollNumber1: Roll1 = [ 4, 6, 8,7];
 const rollNumber2: Roll2 = [ 4, 6, 8,7];
 
+
+//=============== type alias & interface for function
+
+// with type alias
+type Add = (num1: number, num2: number) => number
+
+const add: Add = (num1, num2) => num1 + num2;
+
+// with interface
+interface Add2 {
+    (num1: number, num2: number) : number
+}
+
+const add2: Add2 = (num1, num2) => num1+num2
 
 }
