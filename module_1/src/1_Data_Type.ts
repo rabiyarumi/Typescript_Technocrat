@@ -10,22 +10,22 @@ let name = "Sidra"
 
 // explicid data type 
 
-// string
+// string == 1
 let firstName: string = "Sawda"
 
-//number
+//number == 2
 let number: number = 1234;
 
-// boolean
+// boolean == 3
 let isStudent: boolean = true;
 
-//undefined
+//undefined == 4
 let x : undefined = undefined;
 
-//null
+//null == 5
 let y: null = null;
 
-//any : it should not used
+//any : it should not used == 6
 let a;
 a = 123;
 a= "ahs";
@@ -38,7 +38,7 @@ b = 123;
 
 //----------- non-primitive -------\\
 
-// ----- array 
+// ----- array  == 7
 
 let friends: string[] = ["uumi", "surmi"]
 friends.push("Rumi")
@@ -48,7 +48,8 @@ let rollNumber: number[] =[ 3, 5, 7]
 rollNumber.push(8)
 // rollNumber.push("ghg") // error
 
-//------------ tuple --> its a types of array --> maintain order --> means which type os value how many value
+//------------ tuple == 8
+//  --> its a types of array --> maintain order --> means which type os value how many value
 let coordinates: [number, number] = [1,4]
 
 let ageName : [ number, string, boolean] = [50, "mr.X" , true];

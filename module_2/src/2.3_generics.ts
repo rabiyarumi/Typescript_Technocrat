@@ -24,6 +24,15 @@
             age: 200
         }
     ]
+    
+
+    //========= generic tuple
+
+    type GenericTuple<X, Y> = [X, Y]
+
+    const manush: GenericTuple<string, string> = ["Mr X", "Mrs X"]
+
+    const userWithID : GenericTuple<number, {name: string, email: string}> = [123, {name: "urmi", email: "urmi@gmail.com"}]
 
 }
 
