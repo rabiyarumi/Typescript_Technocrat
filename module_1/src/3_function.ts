@@ -1,4 +1,4 @@
-// Learning function
+// =================== Learning function
 // Normal function
 // Arrow function
 {
